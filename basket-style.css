@@ -1,0 +1,160 @@
+/* Загальні стилі для мобільних пристроїв */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 450px; /* Встановлюємо ширину тіла сайту */
+    margin: 0 auto; /* Центруємо сторінку на екрані */
+    background-color: #f4f4f4; /* Фон сторінки */
+    font-family: "Caveat", cursive;
+    padding: 20px; /* Відступи всередині тіла сайту */
+    overflow-x: hidden; /* Сховати горизонтальний скролл */
+}
+
+/* Навігація */
+header {
+    background-color:#09470a;
+    padding: 10px 15px;
+    color: white
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around; /* Вирівнює елементи по краях (зліва і справа) */
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; /* Ширина логотипу */
+    height: 60px; /* Висота логотипу */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    font-family: "Caveat", cursive;
+    font-size: 32px; /* Розмір шрифту заголовка */
+    margin-top: 10px; /* Відступ зверху */
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 300px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    margin-left: auto; /* Автоматичний відступ зліва для позиціонування праворуч */
+}
+
+.header-icon {
+    width: 30px; /* Ширина іконки */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+    cursor: pointer; /* Показати, що це інтерактивний елемент */
+}
+
+/* банер */
+.tittle-img {
+    text-align: center; /* Вирівнювання зображення по центру */
+    margin: 0; /* Відступи зверху і знизу */
+    width: 100%; /* Ширина контейнера 100% */
+}
+
+.tittle-img img {
+    max-width: 100%; /* Адаптація зображення до ширини контейнера */
+    height: auto; /* Збереження пропорцій зображення */
+    border-radius: 8px; /* Закруглені кути (за бажанням) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь під зображенням (за бажанням) */
+}
+
+.catalog-section {
+    text-align: center; /* Центруємо текст */
+    margin: 20px 0; /* Відступи зверху і знизу */
+}
+
+.catalog-title {
+    font-family: "Caveat", cursive;
+    font-size: 32px; /* Розмір заголовка */
+    margin-bottom: 30px; /* Відступ між заголовком і елементами */
+    color: white;
+    background-color: #09470a;
+    height: 50px;
+}
+.catalog {
+    text-align: center; /* Вирівнювання заголовка по центру */
+    margin: 40px 0; /* Відступи зверху і знизу */
+}
+
+
+.order-form {
+    background-color: #f9f9f9; /* Світло-сірий фон */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px; /* Максимальна ширина форми */
+    margin: auto; /* Центрування форми */
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.order-form label {
+    display: block; /* Відображення міток як блоки */
+    margin-bottom: 5px; /* Відступи */
+    color: #09470a;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.order-form input, .order-form textarea {
+    width: 100%; /* Ширина полів на 100% */
+    padding: 10px; /* Внутрішні відступи */
+    margin-bottom: 15px; /* Відступи між полями */
+    border: 1px solid #09470a; /* Сіра рамка */
+    border-radius: 5px; /* Закруглені кути */
+}
+
+.order-form button {
+    background-color: #09470a; /* Зелений фон для кнопки */
+    color: white; /* Білий текст */
+    padding: 10px 15px; /* Внутрішні відступи кнопки */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer; /* Змінити курсор на pointer */
+    width: 100%;
+}
+
+.order-form button:hover {
+    background-color: #0d6d0f; /* Темніший зелений при наведенні */
+}
+
+
+
+.footer-content {
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 20px; /* Внутрішні відступи */
+    background-color: #09470a; /* Колір фону футера */
+}
+.footer-content h4{
+    color: #f4f4f4;
+}
+.social-icons {
+    margin-top: 15px; /* Відступ зверху */
+}
+
+.social-icon {
+    margin: 0 10px; /* Відступ між іконками */
+}
+
+.social-icon img {
+    width: 30px; /* Ширина іконок */
+    height: auto; /* Збереження пропорцій */
+}

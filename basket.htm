@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тюлі та штори</title>
+    <link rel="stylesheet" href="basket-style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="IMG/photo_2024-04-09_16-19-10.png" alt="Логотип сайту">
+            </div>
+            <h1 class="site-title">Салон тюлей Sofiya</h1>
+        </div>
+    </header>
+    <div class="tittle-img">
+        <img src="IMG/baner.jpg">
+    </div>
+    <div class="catalog">
+        <h2 class="catalog-title">Оформити замовлення</h2>
+
+        <form class="order-form">
+            <label for="product-code">Код товару:</label>
+            <input type="text" id="product-code" name="product-code" placeholder="Введіть код товару" required>
+        
+            <label for="dimensions">Розміри ширина (м):</label>
+            <input type="text" id="dimensions" name="dimensions" placeholder="Ширина (м)" required>
+        
+            <label for="height">Розміри висота (м): <span style="color: red;">*</span></label>
+            <input type="text" id="height" name="height" placeholder="Висота (м)" required>
+
+        
+            <label for="full-name">ПІБ:<span style="color: red;">*</span></label>
+            <input type="text" id="full-name" name="full-name" placeholder="Введіть ваше прізвище, ім'я та по батькові" required>
+        
+            <label for="number">Мобільний номер: <span style="color: red;">*</span></label>
+            <input type="text" id="number" name="number" placeholder="Введіть мобільний номер" required>
+        
+            <label for="city">Місто та область: <span style="color: red;">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Введіть назву міста та області" required>
+        
+            <label for="post-office">Відділення пошти: <span style="color: red;">*</span></label>
+            <input type="text" id="post-office" name="post-office" placeholder="Номер відділення, або індекс Укрпошти" required>
+        
+            <label for="comment">Коментар: <span style="color: red;">*</span></label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Додаткові побажання чи коментар"></textarea>
+        
+            <button  type="submit">Замовити</button>
+        </form>
+    </div>
+            
+
+        <footer>
+            <div class="footer-content">
+                <h4>Слідкуйте за нами</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/salontulle" class="social-icon"><img src="IMG/free-icon-facebook-5968764.png" alt="Facebook"></a>
+                    <a href="https://t.me/salontuiley" class="social-icon"><img src="IMG/free-icon-instagram-2111463.png" alt="Instagram"></a>
+                    <a href="https://t.me/salontuiley" class="social-icon"><img src="IMG//free-icon-telegram-2111646.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script>
+        // Функція для заповнення даних з локального сховища
+window.onload = function() {
+    const productCode = localStorage.getItem('productCode');
+    const length = localStorage.getItem('length');
+    const price = localStorage.getItem('price');
+
+    if (productCode) {
+        document.getElementById('product-code').value = productCode;
+    }
+    if (length) {
+        document.getElementById('dimensions').value = length;
+    }
+    if (price) {
+        document.getElementById('price').value = price + ' грн';
+    }
+}
+
+            </script>
+       
+        
+           
+        
+        
+    </body>
+    </html>

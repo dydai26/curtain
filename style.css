@@ -1,0 +1,545 @@
+/* Загальні стилі для мобільних пристроїв */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 450px; /* Встановлюємо ширину тіла сайту */
+    margin: 0 auto; /* Центруємо сторінку на екрані */
+    background-color: #f4f4f4; /* Фон сторінки */
+    font-family: "Caveat", cursive;
+    padding: 20px; /* Відступи всередині тіла сайту */
+    overflow-x: hidden; /* Сховати горизонтальний скролл */
+}
+
+/* Навігація */
+header {
+    background-color:#09470a;
+    padding: 10px 15px;
+    color: white
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around; /* Вирівнює елементи по краях (зліва і справа) */
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; /* Ширина логотипу */
+    height: 60px; /* Висота логотипу */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    font-family: "Caveat", cursive;
+    font-size: 32px; /* Розмір шрифту заголовка */
+    margin-top: 10px; /* Відступ зверху */
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 300px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    margin-left: auto; /* Автоматичний відступ зліва для позиціонування праворуч */
+}
+
+.header-icon {
+    width: 30px; /* Ширина іконки */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+    cursor: pointer; /* Показати, що це інтерактивний елемент */
+}
+
+.cart-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: #09470a;
+}
+
+/* банер */
+.tittle-img {
+    text-align: center; /* Вирівнювання зображення по центру */
+    margin: 0; /* Відступи зверху і знизу */
+    width: 100%; /* Ширина контейнера 100% */
+}
+
+.tittle-img img {
+    max-width: 100%; /* Адаптація зображення до ширини контейнера */
+    height: auto; /* Збереження пропорцій зображення */
+    border-radius: 8px; /* Закруглені кути (за бажанням) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь під зображенням (за бажанням) */
+}
+
+/* текст вступ */
+.tittle-img p {
+    width: 100%; /* Текст займає всю ширину контейнера */
+    text-align: justify; /* Вирівнювання тексту по всій ширині */
+    margin: 0 auto; /* Відступи для центрування */
+    padding: 10px 0; /* Відступи зверху і знизу */
+}
+
+
+
+.img-tittle {
+    width: 100%; /* Ширина блоку на всю доступну ширину */
+    text-align: justify; /* Вирівнювання тексту по всій ширині */
+    margin: 0; /* Відсутність зовнішніх відступів */
+    padding: 0; /* Відсутність внутрішніх відступів */
+    line-height: 1.2; 
+}
+
+.img-tittle span {
+    display: block; /* Кожен span займає повну ширину рядка */
+    width: 100%; /* Ширина кожного span на всю ширину контейнера */
+    margin-bottom: 10px; /* Відступи між елементами span (опціонально) */
+    font-family: 'Times New Roman', Times, serif;
+    color: #09470a;
+    margin-top: 10px;
+}
+
+
+
+.img-tittle span:last-child {
+    margin-bottom: 0; /* Видалення відступу у останнього елемента */
+}
+
+/* каталог */
+.catalog-section {
+    text-align: center; /* Центруємо текст */
+    margin: 20px 0; /* Відступи зверху і знизу */
+}
+
+.catalog-title {
+    font-family: "Caveat", cursive;
+    font-size: 32px; /* Розмір заголовка */
+    margin-bottom: 30px; /* Відступ між заголовком і елементами */
+    color: #09470a;
+}
+
+
+.catalog {
+    text-align: center; /* Вирівнювання заголовка по центру */
+    margin: 40px 0; /* Відступи зверху і знизу */
+}
+
+.catalog-title {
+    font-size: 28px; /* Розмір шрифту заголовка */
+    margin-bottom: 20px; /* Відступ під заголовком */
+    background-color: #09470a;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f4f4f4;
+}
+
+.slider-title {
+    font-size: 24px; /* Розмір шрифту заголовка для слайдера */
+    margin: 30px 0 10px; /* Відступи зверху та знизу */
+}
+
+.catalog-slider {
+    display: flex; /* Використовуємо флекс-контейнер для горизонтального скролу */
+    overflow-x: auto; /* Додаємо горизонтальний скрол */
+    padding: 5px 0; /* Внутрішні відступи */
+    
+    gap: 10px; /* Відступи між елементами */
+}
+.slider-title {
+    font-size: 32px; /* Розмір шрифту заголовка для слайдера */
+    margin: 30px 0 10px; /* Відступи зверху та знизу */
+    font-family: "Caveat", cursive;
+    color: #09470a;
+}
+
+/* Зміна стилів прокручування для WebKit браузерів (Chrome, Safari) */
+.catalog-slider,
+.order-slider,
+.advantages-slider,
+.reviews-slider {
+    scrollbar-width: thin; /* Для Firefox */
+    scrollbar-color: #09470a #f1f1f1; /* Колір повзунка та треку для Firefox */
+}
+
+.catalog-slider::-webkit-scrollbar,
+.order-slider::-webkit-scrollbar,
+.advantages-slider::-webkit-scrollbar,
+.reviews-slider::-webkit-scrollbar{
+    width: 10px; /* Ширина повзунка */
+    height: 9px; /* Висота повзунка для горизонтального скролу */
+}
+
+.catalog-slider::-webkit-scrollbar-track,
+.order-slider::-webkit-scrollbar-track,
+.advantages-slider::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Колір треку (фону) */
+}
+
+.catalog-slider::-webkit-scrollbar-thumb,
+.order-slider::-webkit-scrollbar-thumb,
+.advantages-slider::-webkit-scrollbar-thumb,
+.reviews-slider::-webkit-scrollbar-thumb {
+    background-color: #09470a; /* Колір самого повзунка */
+    border-radius: 6px; /* Закруглення повзунка */
+    border: 2px solid #f1f1f1; /* Простір між повзунком і треком */
+}
+
+.catalog-slider::-webkit-scrollbar-thumb:hover,
+.order-slider::-webkit-scrollbar-thumb:hover,
+.advantages-slider::-webkit-scrollbar-thumb:hover,
+.reviews-slider::-webkit-scrollbar-thumb:hover {
+    background-color: #09470a; /* Колір повзунка при наведенні */
+}
+
+.catalog-item {
+    background-color: #fff; /* Білий фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Фіксована ширина для кожного контейнера */
+    height: 450px; /* Фіксована висота для кожного контейнера */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Збільшення тіні при наведенні */
+    transform: scale(1.02); /* Невелике збільшення при наведенні */
+    transition: transform 0.2s, box-shadow 0.2s; /* Плавний перехід */
+}
+
+
+.catalog-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.price-button-container {
+    display: flex;
+    justify-content: space-between; /* Вирівнюємо ціна та кнопку по горизонталі */
+    align-items: center; /* Вирівнюємо по вертикалі */
+    width: 100%; /* Контейнер займатиме всю ширину елемента */
+    margin-top: 10px; /* Відступ зверху */
+}
+.product-code {
+    font-size: 15px;
+    color: #09470a; /* Колір тексту для ціни */
+    font-weight: bold;
+}
+
+.price {
+    font-size: 16px; /* Розмір шрифту для ціни */
+    color: #09470a; /* Колір тексту для ціни */
+    font-weight: bold;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.img1:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Збільшення тіні при наведенні */
+    transform: scale(1.02); /* Невелике збільшення при наведенні */
+    transition: transform 0.2s, box-shadow 0.2s; /* Плавний перехід */
+}
+
+
+.order-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #09470a; /* Колір кнопки */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.order-button:hover {
+    background-color: #0d6d0f; /* Темніший колір при наведенні */
+}
+p {
+    font-size: 16px; /* Розмір шрифту */
+    font-family: 'Times New Roman', Times, serifs;
+    line-height: 1.2; /* Міжрядковий інтервал для зручності читання */
+    color: #09470a; /* Колір тексту */
+    margin: 10px 0; /* Відступи зверху і знизу */
+    padding: 0 ; /* Внутрішні відступи зліва і справа для кращого вигляду */
+    width: 100%; /* Ширина блоку на всю доступну ширину */
+    text-align: justify; /* Вирівнювання тексту по всій ширині */
+   
+}
+/* Стилі для модального вікна */
+/* Стилі для модального вікна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 450px;
+    max-height: 80%; /* Встановіть максимальну висоту */
+    overflow-y: auto; /* Додає вертикальну прокрутку */
+
+    
+}
+
+.modal-content {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-description {
+    margin-top: 20px;
+}
+label {
+    display: block; /* Відображати на новому рядку */
+    margin-bottom: 10px; /* Відступ знизу */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: bold; /* Жирний шрифт */
+    color: #09470a; /* Колір тексту */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.order-button2 {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #09470a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.order-button2:hover {
+    background-color: #0d6d0f;
+}
+input[type="number"] {
+    width: 100%; /* Ширина 100% контейнера */
+    padding: 10px; /* Внутрішні відступи */
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 5px; /* Закруглені кути */
+    font-size: 16px; /* Розмір шрифту */
+    color: #09470a; /* Колір тексту */
+    background-color: #f9f9f9; /* Колір фону */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    transition: border-color 0.3s; /* Анімація зміни кольору рамки */
+}
+
+input[type="number"]:focus {
+    border-color: #0d6d0f; /* Колір рамки при фокусуванні */
+    outline: none; /* Прибрати стандартне обведення */
+}
+
+
+
+
+
+
+
+/* кошик */
+
+
+/* Адаптація для екрану шириною 400 пікселів */
+@media (max-width: 400px) {
+    
+    .modal-content {
+        max-width: 90%; /* Зменшуємо максимальну ширину для малих екранів */
+        max-height: 75%; /* Зменшуємо максимальну висоту для малих екранів */
+    }
+}
+
+
+
+
+/* як заміряти */
+.how-to-measure {
+    padding: 2px;
+    background-color: #f9f9f9; /* Світлий фон для блоку */
+    text-align: center;
+    max-width: 450px; /* Адаптація під мобільні пристрої */
+    margin: 0 auto;
+}
+
+.slider-title2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.measure-slider {
+    display: flex;
+    flex-direction: column; /* Вертикальне розміщення для мобільних пристроїв */
+    gap: 20px;
+}
+
+
+
+.measure-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.measure-item img {
+    max-width: 100%; /* Фото адаптується до розміру блоку */
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.measure-item p {
+    font-size: 16px;
+    color: #09470a;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start; 
+}
+
+.consultation-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #09470a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.consultation-btn:hover {
+    background-color: #0d6d0f;
+}
+
+
+
+.how-to-order, .advantages {
+    text-align: center; /* Вирівнювання заголовка по центру */
+    margin: 40px 0; /* Відступи зверху і знизу */
+}
+
+
+.slider-title3 {
+    font-size: 32px; /* Розмір шрифту заголовка для слайдера */
+    margin-left: 35%;
+    margin-bottom: 10px;
+    font-family: "Caveat", cursive;
+    color: #09470a;
+}
+.slider-title2 {
+    font-size: 26px; /* Розмір шрифту заголовка для слайдера */
+    margin: 30px 0 10px; /* Відступи зверху та знизу */
+    background-color: #09470a;
+    color: #f4f4f4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.order-slider, .advantages-slider {
+    display: flex; /* Використовуємо флекс-контейнер для горизонтального скролу */
+    overflow-x: auto; /* Додаємо горизонтальний скрол */
+    padding: 10px 0; /* Внутрішні відступи */
+}
+
+.order-item, .advantage-item {
+    flex: 0 0 auto; /* Не дозволяємо елементам зменшуватись */
+    width: 200px; /* Ширина кожного елемента */
+    margin-right: 20px; /* Відступ між елементами */
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.order-item img, .advantage-item img {
+    width: 100%; /* Адаптація зображення до ширини контейнера */
+    border-radius: 8px; /* Закруглені кути (за бажанням) */
+}
+
+.order-item p, .advantage-item p {
+    margin-top: 10px; /* Відступ між зображенням та текстом */
+}
+.reviews {
+    text-align: center; /* Вирівнювання заголовка по центру */
+    margin: 40px 0; /* Відступи зверху і знизу */
+}
+
+
+
+.reviews-slider {
+    display: flex; /* Використовуємо флекс-контейнер для горизонтального скролу */
+    overflow-x: auto; /* Додаємо горизонтальний скрол */
+    padding: 10px 0; /* Внутрішні відступи */
+}
+
+.review-item {
+    flex: 0 0 auto; /* Не дозволяємо елементам зменшуватись */
+    width: 200px; /* Ширина кожного елемента */
+    margin-right: 20px; /* Відступ між елементами */
+    text-align: center; /* Вирівнювання тексту по центру */
+    font-style: italic; /* Курсив для відгуків */
+}
+
+.footer-content {
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 20px; /* Внутрішні відступи */
+    background-color: #09470a; /* Колір фону футера */
+}
+.footer-content h4{
+    color: #f4f4f4;
+}
+.social-icons {
+    margin-top: 15px; /* Відступ зверху */
+}
+
+.social-icon {
+    margin: 0 10px; /* Відступ між іконками */
+}
+
+.social-icon img {
+    width: 30px; /* Ширина іконок */
+    height: auto; /* Збереження пропорцій */
+}
